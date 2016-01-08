@@ -1,8 +1,18 @@
 body {
-	background-color: #e8e8e8;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+	font-size: 1.1em;
 }
 
-h1 {
-	text-align: center;
+#sidebar {
+	margin: 2em;
+	float: left;
+	border-right: 2px solid;
+	padding-right: 1.5em;
+	/*border-color: #012e65;*/
+}
+
+#bio {
+	font-style: italic;
+	line-height: 135%;
 }
