@@ -2,17 +2,40 @@ body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	text-align: center;
 	font-size: 1.1em;
+	background-color: #fef1fa;
 }
 
-#sidebar {
+.sidebar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
 	margin: 2em;
 	float: left;
 	border-right: 2px solid;
-	padding-right: 1.5em;
+	padding-right: 2em;
+	max-width: 33%;
 	/*border-color: #012e65;*/
 }
 
-#bio {
+.bio {
 	font-style: italic;
 	line-height: 135%;
+}
+
+.cardsheet {
+	position: absolute;
+	left: 33%;
+	max-width: 66%; 
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	margin: 2%;
+	padding: 10px;
+	position: relative;
+	width: 33%;
+	background-color: white;
 }
