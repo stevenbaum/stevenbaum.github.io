@@ -1,6 +1,7 @@
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	text-align: center;
+	color: #280213;
 	font-size: 1.1em;
 	background-color: #fef1fa;
 }
@@ -11,17 +12,21 @@ body {
 	left: 0;
 	bottom: 0;
 	height: 100%;
-	margin: 2em;
 	float: left;
 	border-right: 2px solid;
-	padding-right: 2em;
+	border-color: #60062d;
+	/*padding-right: 2em; */
 	max-width: 33%;
-	/*border-color: #012e65;*/
+}
+
+#selfPhoto {
+	width: 75%;
+	height: auto;
 }
 
 .bio {
 	font-style: italic;
-	line-height: 135%;
+	line-height: 145%;
 }
 
 .cardsheet {
@@ -36,6 +41,9 @@ body {
 	margin: 2%;
 	padding: 10px;
 	position: relative;
-	width: 33%;
+	/*width: 33%;*/
 	background-color: white;
+	-webkit-box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.75);
 }
