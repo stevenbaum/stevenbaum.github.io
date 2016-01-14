@@ -18,11 +18,12 @@ body {
 	background-color: #fff9fd;
 	/*padding-right: 2em; */
 	max-width: 33%;
+}
 
-	/*Stickyfill*/
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0px;
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 #selfPhoto {
