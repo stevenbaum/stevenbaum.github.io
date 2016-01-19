@@ -13,11 +13,22 @@ body {
 	bottom: 0;
 	height: 100%;
 	float: left;
-	border-right: 2px solid;
-	border-color: #b30077;
+	border-right: 3px solid;
+	border-color: #ffe1f7;
 	background-color: #fff9fd;
 	/*padding-right: 2em; */
-	max-width: 33%;
+	max-width: 30%;
+}
+
+a {
+	text-decoration: none;
+	color: #990070;
+	font-weight: bold;
+	transition: color 0.4s, background-color 0.4s;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 #selfPhoto {
@@ -30,13 +41,31 @@ body {
 	line-height: 145%;
 }
 
+.about {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 60px;
+}
+
+.cv {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 30px;
+}
+
 .cardsheet {
 	position: relative;
-	left: 33%;
-	max-width: 66%; 
+	left: 30%;
+	max-width: 70%; 
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+.portfolioHeader {
+	font-style: italic;
 }
 
 .card {
@@ -48,8 +77,36 @@ body {
 	-webkit-box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.75);
 	box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.75);
+
 }
 
-.cardImage {
+.cardleft {
+	position: relative;
+	float: left;
+	width: 49%;
+	padding-right: 2px;
+}
+
+.cardright {
+	position: relative;
+	float: right;
+	width: 49%;
+
+	padding-left: 2px;
+}
+
+.cardThumbnail {
+	/*max-height: 50%;
+	width: auto;
+	*/
 	max-width: 100%;
+	max-height: 50%;
+}
+
+.cardBigImage {
+	max-width: 100%;
+}
+
+.itemTitle {
+
 }
