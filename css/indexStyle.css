@@ -1,7 +1,9 @@
 body {
-	font-family: Lato,"Helvetica Neue","Trebuchet MS", Helvetica, sans-serif;
+	font-family: "Lato","Helvetica Neue","Trebuchet MS", Helvetica, sans-serif;
 	text-align: center;
-	color: #280213;
+	word-spacing: 0.1em;
+	/*color: #280213;*/
+	color: #310217;
 	font-size: 1.1em;
 	background-color: #fef1fa;
 }
@@ -13,15 +15,30 @@ body {
 	bottom: 0;
 	height: 100%;
 	float: left;
-	border-right: 2px solid;
-	border-color: #b30077;
+	border-right: 3px solid;
+	border-color: #ffe1f7;
 	background-color: #fff9fd;
-	/*padding-right: 2em; */
-	max-width: 33%;
+	max-width: 30%;
+	overflow: auto;
+}
+
+h1 {
+	line-height: 60%;
+}
+
+a {
+	text-decoration: none;
+	color: #990066;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 #selfPhoto {
 	width: 75%;
+	max-width: 500px;
 	height: auto;
 }
 
@@ -30,26 +47,56 @@ body {
 	line-height: 145%;
 }
 
+.links {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: 20px;
+	line-height: 170%;
+}
+
 .cardsheet {
 	position: relative;
-	left: 33%;
-	max-width: 66%; 
+	left: 30%;
+	max-width: 70%; 
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
+.portfolioHeader {
+	top: 0;
+	margin-bottom: 8px;
+	line-height: 70%;
+}
+
+.subtext {
+	font-style: italic;
+}
+
 .card {
-	margin: 2%;
-	padding: 14px;
+	margin: 5%;
+	margin-top: -1%;
+	padding: 16px;
+	padding-bottom: 0px;
 	position: relative;
 	max-width: 100%;
 	background-color: white;
 	-webkit-box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.75);
 	box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.75);
+
 }
 
 .cardImage {
-	max-width: 100%;
+	width: 100%;
+	max-width: 950px;
+}
+
+.cardImage:hover {
+
+}
+
+.itemTitle {
+
 }
