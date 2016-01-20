@@ -3,54 +3,58 @@
 	<head>
 		<meta charset="utf-8">
 
+		<link rel="shortcut icon" type="image/x-icon/" href="favicon.ico">
 		<title>Steven Baum</title>
+
 		<link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div class="sidebar">
-			<h1>Oh hey there</h1>
+			<h1>Hey there</h1>
 			<h2>I'm Steven</h2>
-			<img id="selfPhoto" src="assets/me_circle.png">
+			<img id="selfPhoto" src="assets/me_with_cow_circle.png">
 			<p class="bio">
 				- Recent UC Berkeley graduate -<br>
 				- User Experience enthusiast -<br>
-				- Platinum-ranked League of Legends player -
+				- Platinum-level League of Legends player -
 			</p>
-			<a class="about" href="#aboutModal">About</a>
-			<a class="cv" href="">CV</a>
+			<p class="links">
+				<a class="about" href="#aboutModal">About</a><br>
+				<a class="cv" href="assets/StevenBaum_Site_Resume.pdf" target="new">CV</a>
+			</p>
 		</div>
 
+		<!-- HTML for modal info box, only appears when "about" is clicked -->
+		<div>
+
+		</div>
+		<!-- end of modal info box HTML -->
+
 		<div class="cardsheet">
-			<h2 class="portfolioHeader">
-				Recent Items of Interest
-			</h2>
-			<div class="card">
-				<div class="cardleft">
-					<img class="cardBigImage" src="assets/edgeCollar/home_with_simulator.png">
-				</div>
-				<div class="cardright">
-					<img class="cardThumbnail" src="assets/edgeCollar/camera_with_simulator.png">
-				</div>
-				<h3 class="itemTitle">Edge Smart Collar and Companion App</h3>
+			<div class="portfolioHeader">
+				<h2>
+					Recent Items of Interest
+				</h2>
+				<p class="subtext">
+					- Click images to access the project's image gallery -
+				</p>
 			</div>
 			<div class="card">
-				<div class="cardleft">
-
-				</div>
-				<div class="cardright">
-
-				</div>
+				<img class="cardImage" src="assets/edgeCollar/home_with_simulator.png">
+				<h3 class="itemTitle">"Edge" Smart Collar & Companion App</h3>
+			</div>
+			<div class="card">
+				<img class="cardImage" src="assets/brueghelCatalogue/paintingDark_2_trimmed.png">
 				<h3 class="itemTitle">Jan Brueghel Complete Art Catalogue</h3>
 			</div>
 			<div class="card">
-				<div class="cardleft">
-
-				</div>
-				<div class="cardright">
-
-				</div>
+				<img class="cardImage" src="assets/THsite/TH_home_scaled.png">
 				<h3 class="itemTitle">Tellefsen Hall Website, Home of the Cal Band</h3>
 			</div>
 		</div>
+
+		<script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
 	</body>
 </html>
