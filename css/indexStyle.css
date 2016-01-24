@@ -1,11 +1,13 @@
 body {
 	font-family: "Lato","Helvetica Neue","Trebuchet MS", Helvetica, sans-serif;
 	text-align: center;
-	word-spacing: 0.1em;
+	word-spacing: 0.08em;
+	letter-spacing: 0.05em;
 	/*color: #280213;*/
 	color: #310217;
 	font-size: 1.1em;
-	background-color: #fef1fa;
+	/*background-color: #fef1fa;*/
+	background: url("../papertexturedark.png") repeat scroll 0 0;
 }
 
 .sidebar {
@@ -20,6 +22,8 @@ body {
 	background-color: #fff9fd;
 	max-width: 30%;
 	overflow: auto;
+
+	background: url("../papertexture.png") repeat scroll 0 0;
 }
 
 h1 {
@@ -28,7 +32,8 @@ h1 {
 
 a {
 	text-decoration: none;
-	color: #990066;
+	/*color: #990066;*/
+	color: #800055;
 	font-weight: bold;
 }
 
@@ -50,9 +55,40 @@ a:hover {
 .links {
 	left: 0;
 	right: 0;
-	bottom: 0;
-	padding-top: 20px;
+	bottom: 10;
+	/*padding-top: 20px;*/
 	line-height: 170%;
+	border-radius: 2px;
+}
+
+.links:hover {
+
+}
+
+.modaldialogue {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	pointer-events: none;
+	opacity: 0;
+	z-index: 9999;
+	background-color: 
+
+	-webkit-transition: opacity 250ms ease-in;
+	-moz-transition: opacity 250ms ease-in;
+	transition: opacity 250ms ease-in;
+}
+
+.modaldialogue:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modaltext {
+	position: relative;
+
 }
 
 .cardsheet {
@@ -68,6 +104,7 @@ a:hover {
 	top: 0;
 	margin-bottom: 8px;
 	line-height: 70%;
+	width: 100%;
 }
 
 .subtext {
@@ -78,7 +115,7 @@ a:hover {
 	margin: 5%;
 	margin-top: -1%;
 	padding: 16px;
-	padding-bottom: 0px;
+	padding-bottom: 1px;
 	position: relative;
 	max-width: 100%;
 	background-color: white;
@@ -91,6 +128,13 @@ a:hover {
 .cardImage {
 	width: 100%;
 	max-width: 950px;
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.34);
+	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.34);
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.34);
+}
+
+.hidden {
+	display: none;
 }
 
 .cardImage:hover {
