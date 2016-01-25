@@ -22,9 +22,23 @@
 			</p>
 			<p class="links">
 				<a class="about" href="#aboutModal">About</a><br>
-				<a class="cv" href="assets/StevenBaum_Site_Resume.pdf" target="new">CV</a>
+				<a class="cv" href="assets/StevenBaumResume.pdf" target="new">CV</a>
 			</p>
 		</div>
+
+		<!-- HTML for modal info box, only appears when "about" is clicked -->
+		<div id="aboutModal" class="modaldialogue">
+			<div class="modaltext">
+				<h3>Oh my goodness you clicked "About" I'm so flattered</h3>
+				<p>
+					Bio text will go here
+				</p>
+				<h4>
+					<a href="#close" title="Close" class="close">Close</a>
+				<h4>
+			</div>
+		</div>
+		<!-- end of modal info box HTML -->
 
 		<div class="cardsheet">
 			<div class="portfolioHeader">
@@ -38,7 +52,7 @@
 			<!-- Edge Dog Collar -->
 			<div class="project-item">
 				<div class="card">
-					<a href="assets/edgeCollar/home_with_simulator.png" data-lightbox="collar" data-title="Caption">
+					<a class="imglink" href="assets/edgeCollar/home_with_simulator.png" data-lightbox="collar" data-title="Caption">
 						<img class="cardImage" src="assets/edgeCollar/home_with_simulator.png">
 					</a>
 					<a href="assets/edgeCollar/camera_with_simulator.png" data-lightbox="collar" data-title="Caption2">
@@ -47,14 +61,25 @@
 					<a href="assets/edgeCollar/bark_alert_with_simulator.png" data-lightbox="collar" data-title="Caption3">
 						<img class="hidden" src="assets/edgeCollar/bark_alert_with_simulator.png">
 					</a>
+
+					<!-- Design & Sketches (move to separate tab eventually) -->
+					<a href="assets/edgeCollar/storyboards.png" data-lightbox="collar" data-title="Caption4">
+						<img class="hidden" src="assets/edgeCollar/storyboards.png">
+					</a>
+					<a href="assets/edgeCollar/edge_balsamiqs.png" data-lightbox="collar" data-title="Caption5">
+						<img class="hidden" src="assets/edgeCollar/edge_balsamiqs.png">
+					</a>
 					<h3 class="itemTitle">"Edge" Smart Collar & Companion App</h3>
 				</div>
 			</div>
 			<!-- Brueghel Catalogue -->
 			<div class="project-item">
 				<div class="card">
-					<a href="assets/brueghelCatalogue/paintingDark_2_trimmed.png" data-lightbox="brueghel" data-title="Caption">
+					<a class="imglink" href="assets/brueghelCatalogue/paintingDark_2_trimmed.png" data-lightbox="brueghel" data-title="Caption">
 						<img class="cardImage" src="assets/brueghelCatalogue/paintingDark_2_trimmed.png">
+					</a>
+					<a href="assets/brueghelCatalogue/painting_v2.png" data-lightbox="brueghel" data-title="Captionn">
+						<img class="hidden" src="assets/brueghelCatalogue/painting_v2.png">
 					</a>
 					<a href="assets/brueghelCatalogue/genreBrowse_zoomout.png" data-lightbox="brueghel" data-title="Caption2">
 						<img class="hidden" src="assets/brueghelCatalogue/genreBrowse_zoomout.png">
@@ -68,7 +93,7 @@
 			<!-- TH Site -->
 			<div class="project-item">
 				<div class="card">
-					<a href="assets/THsite/TH_home.png" data-lightbox="TH" data-title="Caption">
+					<a class="imglink" href="assets/THsite/TH_home.png" data-lightbox="TH" data-title="Caption">
 						<img class="cardImage" src="assets/THsite/TH_home_scaled.png">
 					</a>
 					<a href="assets/THsite/TH_info_2.png" data-lightbox="TH" data-title="Caption2">
@@ -83,7 +108,7 @@
 			<!-- ISD Desktop Client -->
 			<div class="project-item">
 				<div class="card">
-					<a href="assets/ISD/isd_home.png" data-lightbox="isd" data-title="Caption">
+					<a class="imglink" href="assets/ISD/isd_home.png" data-lightbox="isd" data-title="Caption">
 						<img class="cardImage" src="assets/ISD/isd_home.png">
 					</a>
 					<a href="assets/ISD/isd_configure.png" data-lightbox="isd" data-title="Caption2">
@@ -96,17 +121,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- HTML for modal info box, only appears when "about" is clicked -->
-		<div id="aboutModal" class="modaldialogue">
-			<div class="modaltext">
-				<h3>Test test test</h3>
-				<p>
-					<a href="#close" title="Close" class="close">Close</a>
-				</p>
-			</div>
-		</div>
-		<!-- end of modal info box HTML -->
 
 		<script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
 	</body>
