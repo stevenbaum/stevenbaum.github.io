@@ -6,7 +6,7 @@ body {
 	color: #310217;
 	font-size: 1.1em;
 	/*background-color: #fef1fa;*/
-	background: url("../papertexturedark.png") repeat scroll 0 0;
+	background: url("../assets/papertexturedark.png") repeat scroll 0 0;
 }
 
 .sidebar {
@@ -22,7 +22,7 @@ body {
 	max-width: 30%;
 	overflow: auto;
 
-	background: url("../papertexture.png") repeat scroll 0 0;
+	background: url("../assets/papertexture.png") repeat scroll 0 0;
 }
 
 h1 {
