@@ -3,7 +3,6 @@ body {
 	text-align: center;
 	word-spacing: 0.08em;
 	letter-spacing: 0.05em;
-	/*color: #280213;*/
 	color: #310217;
 	font-size: 1.1em;
 	/*background-color: #fef1fa;*/
@@ -19,7 +18,7 @@ body {
 	float: left;
 	border-right: 3px solid;
 	border-color: #ffe1f7;
-	background-color: #fff9fd;
+	/*background-color: #fff9fd;*/
 	max-width: 30%;
 	overflow: auto;
 
@@ -50,6 +49,7 @@ a:hover {
 .bio {
 	font-style: italic;
 	line-height: 145%;
+	letter-spacing: 0.04em;
 }
 
 .links {
@@ -81,22 +81,40 @@ a:hover {
 	padding-top: 25px;
 	opacity: 1;
 	pointer-events: auto;
-
-	/*-webkit-transform: translateY(-25px);
-	transform: translateY(-25px);
-
-	-webkit-transition: translateY 250ms ease-in;
-	-moz-transition: translateY 250ms ease-in;
-    transition: translateY 250ms ease-in;*/
 }
 
 .modaltext {
 	position: relative;
 	border-radius: 3px;
-	margin: 10% auto;
+	margin: 2% auto;
 	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 10px;
 	background-color: white;
-	width: 650px;
+	width: 80%;
+}
+
+.modaltext > p {
+	font-size: 1.0em;
+	line-height: 150%;
+	letter-spacing: 0.04em;
+}
+
+.close {
+    line-height: 42px;
+    position: absolute;
+    right: 4px;
+    text-align: center;
+    top: 4px;
+    width: 43px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.close:hover {
+	text-decoration: none;
 }
 
 .cardsheet {
