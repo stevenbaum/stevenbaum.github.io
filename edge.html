@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, 
+		minimum-scale=1.0, maximum-scale=1.0" />
+
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<title>Steven Baum</title>
+
+		<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="centerwrap">
+			<div id="headerbar">
+				<a class="logo" id="logored" href="index.html"><img src="assets/logo.png"></a>
+				<a class="logo" id="logoblue" href="index.html"><img src="assets/logoblue.png"></a>
+				<a id="about" href="about.html">About</a>
+			</div>
+			<img id="titlecard" src="assets/edgeCollar/titlecard.png">
+			<h2 id="title">'Edge' : Smart Collar & Companion App</h2>
+			<p class="projectbio">
+				Edge is a mobile app that aggregates data on a dog's activities via prototyped hardware sensors, and then relays the metrics to the user's phone for notifications and human-dog interaction. Users can track their dog's location, physical activity, and barking levels, with app features including a camera feed, microphone and buzzer to allow remote contact with one's pet.
+			</p>
+			<p>-</p>
+			<p class="projectbio"> 
+				I helped create Edge as part of a 5-person team of Berkeley students in a User Interface Design course themed on "Internet of Things" device/app pairings, offered by the Berkeley CS department. Our team worked through the full product design sequence to make Edge:
+				<ul>
+					<li><b>Ideation:</b> Brainstorming, making personas & storyboarding scenarios</li>
+					<li><b>Prototyping:</b> Low-fi sketches, to Balsamiq screen mockups, to a functional JS app</li>
+					<li><b>Evaluation:</b> Conducting usability studies and contextual analysis to gather data</li>
+					<li><b>Iteration:</b> Using feedback to prototype an improved UI on a higher fidelity</li>
+				</ul>
+			</p>
+			<h3>Tools</h3>
+			<!-- Old tool list, for mobile -->
+			<span id="toollist">
+				<img class="toolicon" alt="JavaScript" title="JavaScript" src="assets/tool_icons/javascript.png">
+				<img class="toolicon" alt="Balsamiq" title="Balsamiq mockup designer" src="assets/tool_icons/balsamiq.png">
+				<img class="toolicon" alt="Kinoma" title="Kinoma Studio" src="assets/tool_icons/kinoma.png">
+				<img class="toolicon" alt="Google Maps" title="Google Maps API" src="assets/tool_icons/googlemaps.png">
+			</span>
+			<p>
+				<table id="tooltable">
+					<tr>
+						<td><img alt="JavaScript" src="assets/tool_icons/javascript.png"></td>
+						<td><img alt="Balsamiq" src="assets/tool_icons/balsamiq.png"></td>
+						<td><img alt="Kinoma" src="assets/tool_icons/kinoma.png"></td>
+						<td><img alt="Google Maps" src="assets/tool_icons/googlemaps.png"></td>
+					</tr>
+					<tr>
+						<td><h5>JavaScript</h5></td>
+						<td><h5>Balsamiq</h5></td>
+						<td><h5>Kinoma<br>Studio</h5></td>
+						<td><h5>Google<br>Maps API</h5></td>
+					</tr>
+				</table>
+			</p>
+			<h3>User Research</h3>
+			<p class="projectbio">
+				We used our persona set to establish target demographics:
+				<ul>
+					<li>
+						Working, tech-literate adults who leave their dogs (medium/large breed) home alone during the day
+					</li>
+					<li>
+						Dog owners who want to track and alter their dog's behavior in physical activity or noise levels
+					</li>
+					<li>
+						Outdoors-oriented dog owners who take their pet hiking / camping
+					</li>
+				</ul>
+			</p>
+			<p class="projectbio">
+				With these demographics I conducted contextual inquiries with Berkeley's dog owners to assess their experiences with having dogs. This revealed some key insights into the 21st century dog owner:
+				<ul>
+					<li>
+						Dog owners exhibit high empathy, and thus desire to remotely check their dog's activity and well-being (many users mentioned dogs' loneliness and anxiety)
+					</li>
+					<li>
+						Owners enjoy spending money on their pets (<a href="http://www.americanpetproducts.org/press_industrytrends.asp">empirically evident too!</a>)
+					</li>
+					<li>
+						There are currently few ways to monitor pet behavior remotely.
+					</li>
+				</ul>
+			</p>
+			<p class="projectbio">
+				Using these findings, our team focused on designing an app emphasizing owner-to-pet connection and real-time interaction between the two.
+			</p>
+			<h3>Prototyping & User Testing</h3>
+			<p class="projectbio">
+				Balsamiq mockups allowed for quick iterations and user testing on app design. By asking users to carry out designated tasks we could focus on (and eliminate) any stutters in workflow. For example, our initial designs used a standard hamburger menu to switch between app features, but this obscured navigation scheme caused noticeable delays in task performance; opting for a footer-style toggle bar (seen below) proved resoundingly faster for user interaction.  
+			</p>
+			<img class="projectimage" src="assets/edgeCollar/edge_balsamiqs_scaled2.png">
+			<p class="projectbio">
+				User testing also revealed a strong dichotomy in how users perceived the shock collar feature. Initially designed as a "Shock" button on the camera page, users either loved or detested the idea of remotely administering small, non-injurious pulses to their dog for discipline. To compromise, we altered our icons from an overt implication ("Shock" with bolt imagery) to a gentler suggestion ("Buzz" with abstract waves).
+			</p>
+			<img class="projectimage" src="assets/edgeCollar/iconswap.png">
+			<p><h5>Same function, different perceptions.</h5></p>
+			<p class="projectbio">
+				The final Balsamiq iterations transitioned to a high-fidelity JavaScript application written with <a href="http://kinoma.com/">Kinoma</a>, an IDE and hardware simulator for designing mobile apps and connected devices.
+			</p>
+			<p><img class="projectimage" src="assets/edgeCollar/appstills.png"></p>
+			<p><img class="projectimage" src="assets/edgeCollar/logscaled.png"></p>
+			<p>-</p>
+			<p class="projectbio">
+				(Left to Right) Kinoma's phone emulator, Kinoma Create's hardware pin simulators, and the registered output on a physical Kinoma Create device. The app programatically reads changes in pin values to update the interface, seen here with a daily step counter reading from the "Pedometer" value. Updates can be synced to callback functions integrating APIs, like Google Maps, to dynamically generate a map for the dog's location.
+			</p>
+			<p>-</p>
+			<img class="projectimage" src="assets/edgeCollar/home_with_simulator.png">
+			<p class="projectbio">
+				The final application includes sensors for features including bark alerts, a pedometer, GPS/Compass-based dog location, and push-to-talk voice messaging. These pins can be re-assigned to actual LEDs, microphones, etc. for a functional product.
+			</p>
+			<a href="index.html">{Back}</a>
+		</div>
+		<div id="footer">
+			<a href="mailto:stevenmichaelbaum@gmail.com">
+				<span class="bracket">{</span>
+				<span id="contact">Contact: stevenmichaelbaum at gmail (dot) com</span>
+				<span class="bracket">}</span>
+			</a>
+		</div>
+	</body>
+</html>

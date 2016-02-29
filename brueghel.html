@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, 
+		minimum-scale=1.0, maximum-scale=1.0" />
+
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<title>Steven Baum</title>
+
+		<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="centerwrap">
+			<div id="headerbar">
+				<a class="logo" id="logored" href="index.html"><img src="assets/logo.png"></a>
+				<a class="logo" id="logoblue" href="index.html"><img src="assets/logoblue.png"></a>
+				<a id="about" href="about.html">About</a>
+			</div>
+			<img id="titlecard" src="assets/brueghelCatalogue/bruegheltitlecard.png">
+			<h2 id="title">Jan Brueghel Art Catalogue</h2>
+			<p class="projectbio">
+				The Jan Brueghel Complete Art Catalogue is an online gallery and scholarly database for the works of 16th-century Flemish painter Jan Brueghel. Brueghel was a prolific artist and produced over 400 pieces in his lifetime; including copies from his workshop and collaboration pieces puts the total above 700. The catalogue houses scans and metadata of all of these pieces.
+			</p>
+			<p>-</p>
+			<p class="projectbio">
+				I worked as a UX designer and front-end dev as part of an interdisciplinary team to create the Brueghel Catalogue. The project operated from UC Berkeley's Art History department and consisted of technical consultants, designers, and art historians (naturally). I conducted user research on how Art Historians search for particular pieces, and then leveraged that information to develop the site's interfaces to facilitate users' navigation of the gallery.
+			</p>
+			<h3>Tools</h3>
+			<!-- Mobile Tool List -->
+			<span id="toollist">
+				<img class="toolicon" alt="JavaScript" title="JavaScript" src="assets/tool_icons/javascript.png">
+				<img class="toolicon" alt="HTML" title="HTML" src="assets/tool_icons/html.png">
+				<img class="toolicon" alt="CSS" title="CSS" src="assets/tool_icons/css.png">
+				<img class="toolicon" alt="Drupal" title="Drupal" src="assets/tool_icons/drupal.png">
+			</span>
+			<p>
+				<table id="tooltable">
+					<tr>
+						<td><img alt="JavaScript" src="assets/tool_icons/javascript.png"></td>
+						<td><img alt="HTML" src="assets/tool_icons/html.png"></td>
+						<td><img alt="CSS" src="assets/tool_icons/css.png"></td>
+						<td><img alt="Drupal" src="assets/tool_icons/drupal.png"></td>
+					</tr>
+					<tr>
+						<td><h5>JavaScript</h5></td>
+						<td><h5>HTML</h5></td>
+						<td><h5>CSS</h5></td>
+						<td><h5>Drupal 7</h5></td>
+					</tr>
+				</table>
+			</p>
+			<h3>User Research</h3>
+			<p class="projectbio">
+				The Art History professor directing the project specified a hierarchy of for whom the catalogue was intended:
+				<ol>
+					<li>Scholars looking to gather and share information on Brueghel's work</li>
+					<li>Researchers studying techniques of workshop art and copy production</li>
+					<li>Casual visitors / art enthusiasts with interest in Brueghel or Flemish art</li>
+				</ol>
+			</p>
+			<p class="projectbio">
+				The resulting personas were consequently based on members of academia seeking to collect data on a particular painting(s) within the collection, and auxiliary personas involved more "layman" users looking to casually browse with no particular direction.
+			</p>
+			<p>-</p>
+			<p class="projectbio">
+				Thus the primary workflow for users was established to be search tasks. I consulted with academics, particularly Art Historians, to establish how a scholar would define their search parameters when performing research. The contextual inquiry revealed dozens of different filters with which to sort art, but a set of common categories for data extraction emerged:
+				<ul>
+					<li>
+						<b>Explicit Searches:</b>
+						<ul><li>"I want to see the painting 'Country Road with Windmill'."</li></ul>
+					</li>
+					<li>
+						<b>Content Searches:</b>
+						<ul>
+							<li>"I want to see paintings with dogs in them."</li>
+							<li>"I want to see the landscape genre paintings."</li>
+						</ul>
+					</li>
+					<li>
+						<b>Meta-Level Searches:</b>
+						<ul>
+							<li>"I want to see paintings made from 1580 to 1600."</li>
+							<li>"I want to see paintings currently on display in London."</li>
+						</ul>
+					</li>
+				</ul>
+			</p>
+			<p class="projectbio">
+				These three search patterns formed the basis for site navigation.
+			</p>
+			<h3>Interface Development</h3>
+			<p class="projectbio">
+				The Catalogue was originally hosted on a MediaWiki platform, but the team was switching to using Drupal when I joined. Consequently the site already had an established aesthetic and interface, but these both could be refactored using Drupal's stronger toolkit. Early versions of the site (below) had sparse visuals and many-item sidebar menus:
+			</p>
+			<img class="projectimage" src="assets/brueghelCatalogue/oldflowerpainting.png">
+			<p>-</p>
+			<p class="projectbio">
+				By applying the results of user research (with Drupal edits and manual HTML/CSS file configurations via FTP) I altered the interface to reduce navigable elements by over 33% and, in doing so, streamlined the search tasks performed to select pieces. A recent iteration also shows more cohesive color palettes (never put pre-modern art on white backgrounds) and an orientation of metadata that complements the painting's aspect ratio:
+			</p>
+			<p>-</p>
+			<img class="projectimage" src="assets/brueghelCatalogue/newpaintingwithmenu.png">
+			<p>-</p>
+			<p class="projectbio">
+				Search fields were condensed to one of the three categories: Explicit (search bar), Content (genre, tag), and Meta (location, date, catalog number). This same approach of condensing options and promoting uniformity was then applied to other facets of site navigation. The genre browse feature was initially a set of somewhat arbitrary image links that directed users to particular art genres:
+			</p>
+			<p>-</p>
+			<img class="projectimage" src="assets/brueghelCatalogue/genreBrowse_2_banner_scaled.png">
+			<p>-</p>
+			<p class="projectbio">
+				This design was altered for visual consistency and title-centric display across genre items, promoting quick parsing for genre types.
+			</p>
+			<p>-</p>
+			<img class="projectimage" src="assets/brueghelCatalogue/genreBrowse_zoomout_banner_scaled.png">
+			<p class="projectbio">
+				<a href="http://live-brueghel-family.pantheon.berkeley.edu/">The site is still developing</a>, and has recently included features like <a href="http://live-brueghel-family.pantheon.berkeley.edu/browse-by-location">geographically navigating piece locations via Google Maps-esque GUI</a> to visualize the clusters of museums holding the bulk of Brueghel's work.
+			</p>
+			<a href="index.html">{Back}</a>
+		</div>
+		<div id="footer">
+			<a href="mailto:stevenmichaelbaum@gmail.com">
+				<span class="bracket">{</span>
+				<span id="contact">Contact: stevenmichaelbaum at gmail (dot) com</span>
+				<span class="bracket">}</span>
+			</a>
+		</div>
+	</body>
+</html>

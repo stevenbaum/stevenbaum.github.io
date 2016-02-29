@@ -1,0 +1,19 @@
+body {
+	font-family: "Lato","Helvetica Neue","Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+	word-spacing: 0.08em;
+	letter-spacing: 0.05em;
+	color: #310217;
+	font-size: 1.0em;
+	background: url("../assets/papertexturedark.png") repeat scroll 0 0;
+}
+
+a {
+	text-decoration: none;
+	color: #800055;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}

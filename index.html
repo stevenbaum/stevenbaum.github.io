@@ -2,155 +2,54 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, 
+		minimum-scale=1.0, maximum-scale=1.0" />
 
 		<link rel="shortcut icon" type="image/png" href="favicon.png">
 		<title>Steven Baum</title>
 
-		<link rel="stylesheet" type="text/css" href="css/indexStyle.css">
-		<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/homestyle.css">
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div class="sidebar">
-			<h1>Hey there</h1>
-			<h2>I'm Steven</h2>
-			<img id="selfPhoto" src="assets/me_with_cow_circle.png">
-			<p class="bio">
-				- Avid Wikipedia-er -<br>
-				- User Experience enthusiast -<br>
-				- Platinum-level League of Legends player -
-			</p>
-			<p class="links">
-				<a class="about" href="#aboutModal">About</a><br>
-				<a class="contact" href="#contactModal">Contact</a>
-			</p>
-		</div>
-
-		<!-- HTML for modal info box, only appears when "about" is clicked -->
-		<div id="aboutModal" class="modaldialogue">
-			<div class="modaltext">
-				<h2>Hey there, again.</h2>
-				<p>
-					I'm Steven. I'm recently out of university with a pocket full of dreams and a fascination for how people interact with their environments. That could be anything from sending a Snapchat, to <a href="assets/User Experience of London Museums.pdf" target="new">navigating a museum in London</a>, to watching everyone push on the "PULL" door in the café where I'm writing this page.
-				</p>
-				<p>-</p>
-				<p>
-					My focus is the fusion of Computer Science and Cognitive Science: Human-Computer Interaction. I've worked on teams to develop front-ends for "Internet of Things" applications, academia-based internet catalogues, and traditional commercial software. I'm interested in applying <a href="http://www2.parc.com/istl/groups/uir/publications/items/UIR-1986-05-Card.pdf" target="new">scholarly concepts</a> and <a href="https://www.google.com/design/spec/material-design/introduction.html#" target="new">industry principles</a> to create interfaces that jive with users' mental models and thought processes, through combinations of wireframing, user testing and iterative prototyping.
-				</p>
-				<p>-</p>
-				<p>
-					My free time is split between reading in parks, learning about the Front-End tool of the month, and playing video games.
-				</p>
-				<h4>
-					<a href="#close" title="Close" class="close">X</a>
-				<h4>
+		<div id="centerwrap">
+			<div id="headerbar">
+				<a class="logo" id="logored" href="index.html"><img src="assets/logo.png"></a>
+				<a class="logo" id="logoblue" href="index.html"><img src="assets/logoblue.png"></a>
+				<a id="about" href="about.html">About</a>
+			</div>
+			<div class="cardrow">
+				<a class="card" href="edge.html">
+					<img class="cardimage" src="assets/edgecollar/coverslide.png">
+					<h3>'Edge' Smart Collar & Companion App</h3>
+					<h5>UX Research | Mobile Dev</h5>
+				</a>
+				<a class="card" href="brueghel.html">
+					<img class="cardimage" src="assets/brueghelCatalogue/brueghelslidecover.png">
+					<h3>Jan Brueghel Art Catalogue</h3>
+					<h5>UX Research | Web Dev</h5>
+				</a>
+			</div>
+			<div class="cardrow">
+				<a class="card" href="isd.html">
+					<img class="cardimage" src="assets/ISD/isdcoverslide.png">
+					<h3>Innovative Security Designs Client</h3>
+					<h5>UI Design | Software Dev</h5>
+				</a>
+				<a class="card" href="th.html">
+					<img class="cardimage" src="assets/THsite/thcoverslide.png">
+					<h3>Tellefsen Hall, Home of Cal Band</h3>
+					<h5>UI Design | Web Dev</h5>
+				</a>
 			</div>
 		</div>
-		<!-- end of modal info box HTML -->
-
-		<!-- Simpler modal contact info box -->
-		<div id="contactModal" class="modaldialogue">
-			<div class="modaltext">
-				<h3>Steven Baum</h3>
-				<h4>Berkeley, California</h4>
-				<h3>stevenmichaelbaum AT gmail (dot) com</h3>
-				<h4>
-					<a href="#close" title="Close" class="close">X</a>
-				</h4>
-			</div>
+		<div id="footer">
+			<a href="mailto:stevenmichaelbaum@gmail.com">
+				<span class="bracket">{</span>
+				<span id="contact">Contact: stevenmichaelbaum at gmail (dot) com</span>
+				<span class="bracket">}</span>
+			</a>
 		</div>
-		<!-- end of contact info HTML -->
-
-		<div class="cardsheet">
-			<div class="portfolioHeader">
-				<h2>
-					Recent Items of Interest
-				</h2>
-				<p class="subtext">
-					- Click an image to access the project's gallery -
-				</p>
-			</div>
-			<!-- Edge Dog Collar -->
-			<div class="project-item">
-				<div class="card">
-					<a class="imglink" href="assets/edgeCollar/home_with_simulator.png" data-lightbox="collar" data-title="The Edge collar is a JavaScript-prototyped mobile application paired with the Kinoma Create Hardware Simulator to mimic a functional 'smart' dog collar.">
-						<img class="cardImage" src="assets/edgeCollar/home_with_simulator.png">
-					</a>
-					<a href="assets/edgeCollar/camera_with_simulator.png" data-lightbox="collar" data-title="The Kinoma Create (center & right panels) allows the app to read data from simulated hardware sensors and present data on the dog's activity levels, location, and more.">
-						<img class="hidden" src="assets/edgeCollar/camera_with_simulator.png">
-					</a>
-					<!-- Design & Sketches (move to separate tab eventually) -->
-					<a href="assets/edgeCollar/storyboards.png" data-lightbox="collar" data-title="Early storyboarding: your dog becomes lost outside, and your dog starts barking while you are away from home. These inspired the key app features, dog GPS and bark tracking.">
-						<img class="hidden" src="assets/edgeCollar/storyboards.png">
-					</a>
-					<a href="assets/edgeCollar/edge_balsamiqs.png" data-lightbox="collar" data-title="The storyboards are then transitioned into balsamiq mock-ups that are iterated into the final JavaScript prototype.">
-						<img class="hidden" src="assets/edgeCollar/edge_balsamiqs.png">
-					</a>
-					<!-- End design & sketches -->
-					<a href="assets/edgeCollar/map.png" data-lightbox="collar" data-title="Locational coordinates are synced with the Google Maps API to show a current location of your dog.">
-						<img class="hidden" src="assets/edgeCollar/map.png">
-					</a>
-					<a href="assets/edgeCollar/bark_alert_with_simulator.png" data-lightbox="collar" data-title="Here the 'dog-map' also displays a barking alert as the collar reads excessive noise levels.">
-						<img class="hidden" src="assets/edgeCollar/bark_alert_with_simulator.png">
-					</a>
-					<h3 class="itemTitle">"Edge" Smart Collar & Companion App</h3>
-				</div>
-			</div>
-			<!-- Brueghel Catalogue -->
-			<div class="project-item">
-				<div class="card">
-					<a class="imglink" href="assets/brueghelCatalogue/village_by_stream_oldbanner.png" data-lightbox="brueghel" data-title="The Jan Brueghel Catalogue (live-brueghel-family.pantheon.berkeley.edu) is a complete online database of Jan Brueghel's works, created primarily with Drupal. In this early-stage interface a user sees a particular painting and its associated metadata.">
-						<img class="cardImage" src="assets/brueghelCatalogue/The_Sense_of_Sight_scaled.png">
-					</a>
-					<a href="assets/brueghelCatalogue/village_by_stream_newbanner.png" data-lightbox="brueghel" data-title="An updated display for the same painting shows a simplified sidebar menu and rearranged metadata, both altered to facilitate user navigation. This display also 'frames' the picture for a more central focus and larger resolution.">
-						<img class="hidden" src="assets/brueghelCatalogue/village_by_stream_newbanner.png">
-					</a>
-					<a href="assets/brueghelCatalogue/genreBrowse_2_banner.png" data-lightbox="brueghel" data-title="An early iteration of the 'browse by genre' function featured images of arbitrary dimensions and minimal clarity.">
-						<img class="hidden" src="assets/brueghelCatalogue/genreBrowse_2_banner.png">
-					</a>
-					<a href="assets/brueghelCatalogue/genreBrowse_zoomout_banner.png" data-lightbox="brueghel" data-title="An updated Genre Browse uses a simple grid layout and consistent visuals, allowing users to quickly parse the page for their desired genre.">
-						<img class="hidden" src="assets/brueghelCatalogue/genreBrowse_zoomout_banner.png">
-					</a>
-					<!-- Brueghel Chronology; disabled for now
-					<a href="assets/brueghelCatalogue/chronologyWide_2.png" data-lightbox="brueghel" data-title="A parent site to the catalogue is still being developed, but will feature more historical information like this chronology for the full Brueghel family.">
-						<img class="hidden" src="assets/brueghelCatalogue/chronologyWide_2.png">
-					</a>
-					-->
-					<h3 class="itemTitle">Jan Brueghel Complete Art Catalogue</h3>
-				</div>
-			</div>
-			<!-- TH Site -->
-			<div class="project-item">
-				<div class="card">
-					<a class="imglink" href="assets/THsite/TH_home.png" data-lightbox="TH" data-title="The Tellefsen Hall website (tellefsenhall.org) is a straightforward Wordpress Site for Tellefsen Hall, the historic home for the University of California Marching Band.">
-						<img class="cardImage" src="assets/THsite/TH_home.png">
-					</a>
-					<a href="assets/THsite/TH_info_2.png" data-lightbox="TH" data-title="The site relays the primary and logistical information for band members interested in living in Tellefsen Hall, as well as providing a point of contact with its student-run managing staff.">
-						<img class="hidden" src="assets/THsite/TH_info_2.png">
-					</a>
-					<a href="assets/THsite/TH_lib_photo.png" data-lightbox="TH" data-title="Lightbox-based displays allow users to navigate image galleries that showcase the house's many amenities, including libraries, kitchens, and common rooms.">
-						<img class="hidden" src="assets/THsite/TH_lib_photo.png">
-					</a>
-					<h3 class="itemTitle">Tellefsen Hall Website, Home of the Cal Band</h3>
-				</div>
-			</div>
-			<!-- ISD Desktop Client -->
-			<div class="project-item">
-				<div class="card">
-					<a class="imglink" href="assets/ISD/isd_home.png" data-lightbox="isd" data-title="The Innovative Security Designs desktop client is commercial security camera software that lets users manage a grid of IP ethernet cameras for home or office security. The main page shows the current network of cameras populated by an HTTP broadcast. The software and its interface are made with C++/Qt and Qt Interface Designer, respectively.">
-						<img class="cardImage" src="assets/ISD/isd_home.png">
-					</a>
-					<a href="assets/ISD/isd_configure.png" data-lightbox="isd" data-title="A double click on any camera listed will prompt a modal dialog to remotely configure settings for that camera via HTTP and camera-specific protocols.">
-						<img class="hidden" src="assets/ISD/isd_configure.png">
-					</a>
-					<a href="assets/ISD/isd_firmware.png" data-lightbox="isd" data-title="Switching to the firmware tab allows users to apply batch-level firmware updates for the cameras, as well as check for discrepancies in camera metadata.">
-						<img class="hidden" src="assets/ISD/isd_firmware.png">
-					</a>
-					<h3 class="itemTitle">Innovative Security Designs Desktop Client</h3>
-				</div>
-			</div>
-		</div>
-
-		<script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
 	</body>
 </html>

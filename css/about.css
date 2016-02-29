@@ -1,0 +1,16 @@
+#bioinfo {
+	margin-left: 11%;
+	margin-right: 11%;
+}
+
+#selfphoto {
+	width: 75%;
+	max-width: 450px;
+	height: auto;
+}
+
+.blurb {
+	font-style: italic;
+	letter-spacing: 0.04em;
+	padding-bottom: 20px;
+}

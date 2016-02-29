@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, 
+		minimum-scale=1.0, maximum-scale=1.0" />
+
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<title>Steven Baum</title>
+
+		<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="centerwrap">
+			<div id="headerbar">
+				<a class="logo" id="logored" href="index.html"><img src="assets/logo.png"></a>
+				<a class="logo" id="logoblue" href="index.html"><img src="assets/logoblue.png"></a>
+				<a id="about" href="about.html">About</a>
+			</div>
+			<img id="titlecard" src="assets/ISD/titlecard.png">
+			<h2>Innovative Security Designs Client</h2>
+			<p class="projectbio">
+				Innovative Security Designs (ISD) provides IP-addressed security cameras and associated software. Users can connect multiple ISD cameras to a router via ethernet cable and create a local grid of cameras based on the user's network.
+			</p>
+			<p>-</p>
+			<p class="projectbio">
+				I worked as a software engineer intern at ISD for a summer, with my time focused on the ISD desktop client. The client is the primary tool users have for managing and configuring their network of cameras. Because of company's small size I worked across the stack on the product, ranging from network-level socket work to creating the software UI.
+			</p>
+			<h3>Tools</h3>
+			<!-- Mobile Tool List -->
+			<span id="toollist">
+				<img class="toolicon" alt="C++" title="C++" src="assets/tool_icons/cplusplus.png">
+				<img class="toolicon" alt="Qt" title="Qt" src="assets/tool_icons/qt.png">
+				<img class="toolicon" alt="CSS" title="CSS" src="assets/tool_icons/css.png">
+				<img class="toolicon" alt="Wireshark" title="Wireshark" src="assets/tool_icons/wireshark.png">
+			</span>
+			<p>
+				<table id="tooltable">
+					<tr>
+						<td><img alt="C++" src="assets/tool_icons/cplusplus.png"></td>
+						<td><img alt="Qt" src="assets/tool_icons/qt.png"></td>
+						<td><img alt="CSS" src="assets/tool_icons/css.png"></td>
+						<td><img alt="Wireshark" src="assets/tool_icons/wireshark.png"></td>
+					</tr>
+					<tr>
+						<td><h5>C++</h5></td>
+						<td><h5>Qt,<br>Qt Designer</h5></td>
+						<td><h5>CSS</h5></td>
+						<td><h5>Wireshark</h5></td>
+					</tr>
+				</table>
+			</p>
+			<h3>Software Development & UI Design</h3>
+			<p class="projectbio">
+				ISD's client is built with <a href="www.qt.io">Qt</a>, an open-source C++ framework for making software and deploying to any platform. Qt's high flexibility allows the desktop client to translate to iOS and Android versions without any refactoring of code, so my fellow intern could easily pull from my code repo to create ISD Mobile.
+			</p>
+			<img class="projectimage" src="assets/ISD/isd_home_scaled.png">
+			<p class="projectbio">
+				(Above) The landing page for the desktop client. The table is populated with cameras found from an HTTP broadcast sent from software launch or pressing "Refresh List". Each camera's response packets contain associated metadata, and are parsed according to a provided protocol to give information on IP address, time running, etc.
+			</p>
+			<p>-</p>
+			<p class="projectbio">
+				To facilitate visualizing cameras I added functionality to take a "snapshot" of each camera's feed and include it as a thumbnail. This allows the user to quickly get cursory information on a camera's feed, without manually opening a video stream. A 'refresh thumbnails' button above the table allows for easy updates, and for flexibility a toggled checkbox collapses images to condense the table into raw data.
+			</p>
+			<img class="projectimage" src="assets/ISD/isd_configure.png">
+			<p>-</p>
+			<p class="projectbio">
+				(Above) A configuration dialog opens on a double-click to any table row. From here users can submit new settings to re-configure any particular camera via HTTP POST.<br>(Below) A toggle from the landing page switches to the firmware feature, where users can apply batch updates to cameras. For both the landing and firmware pages users can apply search filters to display only particular sets of cameras based on any data parameter (E.G. "Name: 'Hallway'").
+			</p>
+			<p>-</p>
+			<img class="projectimage" src="assets/ISD/isd_firmware_scaled.png">
+			<p>-</p>
+			<a href="index.html">{Back}</a>
+		</div>
+		<div id="footer">
+			<a href="mailto:stevenmichaelbaum@gmail.com">
+				<span class="bracket">{</span>
+				<span id="contact">Contact: stevenmichaelbaum at gmail (dot) com</span>
+				<span class="bracket">}</span>
+			</a>
+		</div>
+	</body>
+</html>

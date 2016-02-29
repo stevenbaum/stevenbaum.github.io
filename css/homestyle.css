@@ -1,0 +1,182 @@
+body {
+	font-family: "Lato","Helvetica Neue","Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+	word-spacing: 0.08em;
+	letter-spacing: 0.05em;
+	color: #310217;
+	font-size: 1.1em;
+	background: url("../assets/papertexturedark.png") repeat scroll 0 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #800055;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#centerwrap {
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	max-width: 1200px;
+	margin-top: 4%;
+
+	/* Animation to fade in all content on load */
+	animation-duration: 0.6s;
+	animation-timing-function: ease-out;
+	animation-name: fadein;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+#headerbar {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.logo {
+	position: absolute;
+	left: 0;
+}
+
+#logored {
+	opacity: 1;
+	transition: 0.3s ease-out;
+}
+
+#logored:hover {
+	opacity: 0;
+	transition: 0.3s ease-out;
+}
+
+#logoblue {
+	opacity: 0;
+	transition: 0.3s ease-out;
+}
+
+#logoblue:hover {
+	opacity: 1;
+	transition: 0.3s ease-out;
+}
+
+#about {
+	float: right;
+	padding-top: 40px;
+	margin-right: 2%;
+}
+
+#footer {
+	background: url("../assets/papertexture.png") repeat scroll 0 0;
+	border-top: 3px solid;
+	border-color: #ffe1f7;
+	width: 100%;
+	height: 40px;
+	padding-top: 20px;
+	margin-top: 30px;
+	opacity: 0.7;
+}
+
+#footer > span {
+	top: 20;
+}
+
+#contact {
+	font-size: 0.9em;
+}
+
+#titlecard {
+	width: 80%;
+	max-width: 773px;
+	height: auto;
+}
+
+#title {
+	padding-bottom: 15px;
+}
+
+.projectbio {
+	margin-left: 14%;
+	margin-right: 14%;
+	text-align: left;
+	line-height: 140%;
+	font-size: 0.95em;
+}
+
+table {
+	margin: auto;
+}
+
+td {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#toollist {
+	display: none;
+	padding-bottom: 10px;
+}
+
+.toolicon {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+ul, ol {
+	text-align: left;
+	margin-left: 14%;
+	margin-right: 14%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+li {
+	line-height: 135%;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-size: 0.95em;
+}
+
+@media (max-width: 800px) {
+	#centerwrap {
+		width: 95%;
+	}
+
+	.cardrow {
+		flex-wrap: wrap;
+	}
+
+	.projectimage {
+		width: 95%;
+		height: auto;
+	}
+
+	#tooltable {
+		display: none;
+	}
+
+	#toollist {
+		display: inline-block;
+	}
+
+	#footer {
+		font-size: 0.88em;
+	}
+}
