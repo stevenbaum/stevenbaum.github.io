@@ -13,7 +13,8 @@ body {
 
 a {
 	text-decoration: none;
-	color: #800055;
+	/*color: #800055;*/
+	color: #A0066C;
 	font-weight: bold;
 }
 
@@ -21,13 +22,13 @@ a:hover {
 	text-decoration: underline;
 }
 
-#centerwrap {
+.centerwrap {
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
 	max-width: 1200px;
-	margin-top: 4%;
+	margin-top: 3.5%;
 
 	/* Animation to fade in all content on load */
 	animation-duration: 0.6s;
@@ -43,6 +44,11 @@ a:hover {
 	to {
 		opacity: 1;
 	}
+}
+
+.projectwrap {
+	width: 60%;
+	max-width: 900px;
 }
 
 #headerbar {
@@ -104,7 +110,7 @@ a:hover {
 }
 
 #titlecard {
-	width: 80%;
+	width: 100%;
 	max-width: 773px;
 	height: auto;
 }
@@ -114,11 +120,59 @@ a:hover {
 }
 
 .projectbio {
-	margin-left: 12%;
-	margin-right: 12%;
+	margin-left: 8%;
+	margin-right: 8%;
 	text-align: left;
 	line-height: 140%;
 	font-size: 0.95em;
+}
+
+.projectsection {
+	margin-top: 3.5em;
+	margin-bottom: 5.25em;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background-color: #FFFEFE;
+}
+
+.projectsection > h3:after {
+	width: 4em;
+    height: 0.2em;
+    background-color: #D691AF;
+    content: '';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+}
+
+.abstractimage {
+	width: 100px;
+}
+
+.projectimage {
+	max-width: 100%;
+}
+
+#button > a {
+	display: inline;
+    padding: 14px;
+    background-color: #45B6C5;
+    width: 100%;
+    border-radius: 2px;
+    font-weight: normal;
+    color: white;
+    -webkit-box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.75);
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+}
+
+#button > a:hover {
+	text-decoration: none;
+	background-color: #2A97A7;
 }
 
 table {

@@ -12,15 +12,99 @@
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div id="centerwrap">
+		<div class="centerwrap projectwrap">
 			<div id="headerbar">
 				<a class="logo" id="logored" href="index.html"><img src="assets/logo.png"></a>
 				<a class="logo" id="logoblue" href="index.html"><img src="assets/logoblue.png"></a>
 				<a id="about" href="about.html">About</a>
 			</div>
-			<img id="titlecard" src="assets/edgeCollar/titlecard.png">
+			<img id="titlecard" src="assets/museumapp/titlecard.png">
 			<h2 id="title">London Museum Explorer</h2>
-
+			<div class="projectsection">
+				<h3>Abstract</h3>
+				<p class="projectbio">
+					The London Museum Explorer is a web app designed to help showcase and navigate The Capital's plethora of world-class museums. It's also my small love letter to an incredible city, and a memento of the four months I spent there last fall.
+				</p>
+				<img class="abstractimage" src="assets/museumapp/unionjackheart.png">
+			</div>
+			<div id="button"><a href="https://stevenbaum.github.io/MuseumApp" target="new">View Live Version</a></div>
+			<div class="projectsection">
+				<h3>Project Context</h3>
+				<p class="projectbio">
+					The London Museum Explorer is a personal project resulting from my final semester of college, which I chose to take abroad - I spent the end of 2015 studying in central London with a cohort of 100 other students. I had the opportunity to take a four-month class on museum studies with a focus on London's own institutions, and I was even able to apply my UX lens to dissect patrons' user journeys as part of a scholarly paper (see below).
+				</p>
+				<p>-</p>
+				<p class="projectbio">
+					As both a tourist and student I could experience London's finest, but without the resources of my program and professors I would've had much more difficulty navigating the <a href="https://en.wikipedia.org/wiki/List_of_museums_in_London">over 100 museums</a> populating the city. Thus I decided to see if I could create a platform to direct individuals to museums coinciding with their interests.
+				</p>
+				<a href="assets/User Experience of London Museums.pdf" target="new"><img src="assets/tool_icons/essay.png" /><br>Patron Experience and<br>The National Portrait Gallery</a>
+			</div>
+			<div class="projectsection">
+				<h3>Tools</h3>
+				<span id="toollist">
+					<img class="toolicon" alt="Pencil & Paper" title="Pencil & Paper" src="assets/tool_icons/penandpaper.png">
+					<img class="toolicon" alt="LucidChart" title="LucidChart" src="assets/tool_icons/lucidchart.png">
+					<img class="toolicon" alt="Balsamiq" title="Balsamiq mockup designer" src="assets/tool_icons/balsamiq.png">
+					<img class="toolicon" alt="Photoshop" title="JavaScript" src="assets/tool_icons/photoshop.png">
+					<img class="toolicon" alt="React" title="React" src="assets/tool_icons/react.png">
+				</span>
+				<p>
+					<table id="tooltable">
+						<tr>
+							<td><img alt="Pencil & Paper" src="assets/tool_icons/penandpaper.png"></td>
+							<td><img alt="LucidChart" src="assets/tool_icons/lucidchart.png"></td>
+							<td><img alt="Balsamiq" src="assets/tool_icons/balsamiq.png"></td>
+							<td><img alt="Photoshop" src="assets/tool_icons/photoshop.png"></td>
+							<td><img alt="React" src="assets/tool_icons/react.png"></td>
+						</tr>
+						<tr>
+							<td><h5>Pencil & Paper</h5></td>
+							<td><h5>LucidChart</h5></td>
+							<td><h5>Balsamiq</h5></td>
+							<td><h5>Photoshop</h5></td>
+							<td><h5>React<br>(& HTML/CSS)</h5></td>
+						</tr>
+					</table>
+				</p>
+			</div>
+			<div class="projectsection">
+				<h3>User Research</h3>
+				<p class="projectbio">
+					Rather than creating elaborate personas to capture cohorts of users, I had the luxury of being surrounded by my user groups each and every day. I lived next to the British Museum (the museum to end all museums) and during my stay compiled a list of groups who visited the British Museum <i>of their own accord</i>:
+					<ul>
+						<li><b>College Students</b> (British/foreign - excluding school trip groups)</li>
+						<li><b>Tourists</b> (Excluding guided tour groups via agencies)</li>
+						<li><b>Londoners</b> (Professionals on break, seniors, couples, etc.)</li>
+					</ul>
+				</p>
+				<img class="projectimage" src="assets/museumapp/britishmuseumsteps.png" />
+				<p><i>(Cheesin' it up at the British Museum with fellow students)<br>
+					(Also pictured: confused tourist)</i></p>
+				<p>-</p>
+				<p class="projectbio">
+					My day-to-day living situation afforded me constant access to conduct <b><u>interviews</u></b> or <b><u>contextual inquiries</u></b> with all parties listed. I could simply walk down the street and find a friend, tourist, or Briton to ask about their reason for visiting the British Museum, and where else they planned to visit in the future.
+				</p>
+				<p>-</p>
+				<p class="projectbio">
+					<b><u>Online communities</u></b> served as another, more wide-reaching resource. <a href="https://www.reddit.com/r/london/">The London subreddit</a> is a community of over 50,000 subscribed members and many more individuals (myself included!) visiting to digest news, events, and dialogues surrounding the city. Visitors often post questions to get advice from locals; such posts were a valuable way to directly access users' motives and goals for experiencing the city.
+				</p>
+				<img class="projectimage" src="assets/museumapp/redditpost.png" />
+				<p><i>A common question post made on the London subreddit<br>
+					(Protip: Londoners generally find tourist posts insufferable)</i></p>
+			</div>
+			<div class="projectsection">
+				<h3>User Research Conclusions</h3>
+				<p class="projectbio">
+					By aggregating these sources of information I could distill a small number of key factors determining how individuals or groups approach museum navigation:
+				</p>
+				<img src="assets/tool_icons/clock.png" />
+				<p><b>Time Sensitivity</b></p>
+				<p class="projectbio">
+					Tourists are often limited in the amount of time spent in a particular city. With many sights to see and tight itineraries to follow, they can only budget time for so many attractions. Consequently many of London's visitors expressed preferences based on seeing the "best" or "top" museums, i.e. <b><u>those with the most valuable or famous contents</u></b>.
+				</p>
+			</div>
+			<a href="index.html">{Back}</a>
+		</div>
 			
 		<div id="footer">
 			<a href="mailto:stevenmichaelbaum@gmail.com">
