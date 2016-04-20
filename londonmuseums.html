@@ -70,7 +70,7 @@
 			<div class="projectsection">
 				<h3>User Research</h3>
 				<p class="projectbio">
-					Rather than creating elaborate personas to capture cohorts of users, I had the luxury of being surrounded by my user groups each and every day. I lived next to the British Museum (the museum to end all museums) and during my stay compiled a list of groups who visited <i>of their own accord</i>:
+					Because I was a one-man team and I had the luxury of being surrounded by my user groups every day, there was less need to create detailed personas than when working with large UX teams and less-accessible user cohorts. I lived next to the British Museum (the museum to end all museums) and during my stay compiled a list of groups who visited <i>of their own accord</i>:
 					<ul>
 						<li><b>College Students</b> (Excluding school field trips)</li>
 						<li><b>Tourists</b> (Excluding guided groups booked via agencies)</li>
@@ -82,7 +82,7 @@
 					(Also pictured: confused tourist)</i></p>
 				<p>-</p>
 				<p class="projectbio">
-					My living situation afforded me constant access to conduct <b><u>interviews</u></b> and <b><u>contextual inquiries</u></b> with those three groups. I could simply walk down the street and find a friend, tourist, or Briton to ask about their reason for visiting the British Museum, and where else they planned to visit.
+					My living situation afforded me constant access to conduct <b><u>interviews</u></b> and <b><u>contextual inquiries</u></b> with these three groups. I could simply walk down the street and find a friend, tourist, or Briton to ask about their reason for visiting the British Museum, and where else they planned to visit.
 				</p>
 				<p>-</p>
 				<p class="projectbio">
@@ -117,7 +117,7 @@
 					Consequently I ideated on features that would address these points:
 					<ol>
 						<li>
-							<b>'Greatest Hits'</b>: Although I aimed to promote exploration and discovery, if a user truly wants an instant out, they could easily find the 'top' few museums with the most curatorial starpower.
+							<b>'Greatest Hits'</b>: Although I aimed to promote exploration, users should easily be able to find the 'top' visited museums.
 						</li>
 						<li>
 							<b>Categorization</b>: Museums should be arranged in a loose taxonomy based on differences in content.
@@ -165,15 +165,65 @@
 				<img class="projectimage" src="assets/museumapp/balsamiq2.png">
 				<p>-</p>
 				<p class="projectbio">
-					Asking friends to perform a small set of tasks (find The Sherlock Holmes Museum, see what exhibitions are on at Tate Modern) revealed that <b><u>there had to be better navigation means than dropdowns and densely-packed tables</b></u>. Similarly, the same initial 10 museums displayed were always the first ones that users would explore; this was <b><u>creating an unintended hierarchy at odds with the goal of exploration</u></b>.
+					Asking friends to perform a small set of tasks (find The Sherlock Holmes Museum, see what exhibitions are on at Tate Modern) revealed that <b><u>there had to be better navigation means than dropdowns and densely-packed tables</b></u>. Similarly, the same initial 10 museums displayed were always the first ones that users would explore; <b><u>this was creating a visual hierarchy negating the goal of exploration</u></b>.
 				</p>
 				<p class="projectbio">
-					Enter the circular landing page menu:
+					While grouping museum subcategories into searchable types, I saw a natural fit for a circular landing page menu:
 				</p>
-				<img class="projectimage" src="assets/museumapp/balsamiq3.png">
-				<p>
-
+				<img class="projectimage" src="assets/museumapp/category.gif">
+				<p>-</p>
+				<p class="projectbio">
+					The menu accomplished a few important things:
+					<ul>
+						<li><b>Parity</b>: No category is clearly prioritized over another in a visual context</li>
+						<li><b>Onboarding</b>: A simple message - "Explore the Capital's Museums" - provides direction and user agency; the museums they see are direct results of their category selection</li>
+						<li><b>Time Buffer</b>: Loading the page triggers API calls to fetch the museum data - taking a moment to select a category ensures all data will be ready when the museums display</li>
+					</ul>
 				</p>
+			</div>
+			<div class="projectsection">
+				<h3>Front-End Development</h3>
+				<p class="projectbio">
+					In UX I'm a more skilled developer than graphic designer, so personal projects skip InVision-stage hi-fi protoypes - it's easier for me to dive straight into code once I've established structure and function.
+				</p>
+				<p>-</p>
+				<p class="projectbio">
+					<a href="https://facebook.github.io/react/" target="new">Facebook's React</a> was a perfect fit to help build my site as a dynamic Single-Page Application. Its design pattern of funnel-down UI propagation meant I could run initial API calls, save the results to the top level, and change the museum displays in response to user navigation.
+				</p>
+				<p>-</p>
+				<p class="projectbio">
+					<b><u>There was no established way to categorize museums, meaning I had to devise my own method</u></b>. I found that by cross-referencing 60 Google Maps results for 'museum' around Trafalgar Square with <a href="https://en.wikipedia.org/wiki/List_of_museums_in_London" target="new">an exhaustive Wikipedia chart</a>, I could extract the Wikipedia subcategories into one of five general categories for search: Science & Tech, Art & Design, History, Military, and Media.
+				</p>
+				<img class="projectimage" src="assets/museumapp/appcode.png">
+				<p>-</p>
+				<p class="projectbio">
+					Many lines of JavaScript and CSS later I had a working live version! I'm partial to a little CSS razzle-dazzle, so I wrote transitions to turn the landing menu into a set of navigable tabs at the bottom - <b><u>this preserves user understanding of site iconography, and switching museum categories remains a simple one-click step.</u></b>
+				</p>
+				<img class="projectimage" src="assets/museumapp/menutransition.gif">
+				<p>-</p>
+				<p class="projectbio">
+					The Google Maps API provides museum metadata, an interactive mini-map display, and photo assets. The Wikipedia API provides a museum's category, as well as informative text pulled from its individual Wikipedia entry.
+				</p>
+			</div>
+			<div class="projectsection">
+				<h3>Conclusion</h3>
+				<p class="projectbio">
+					I'm aiming to iterate on the site and polish it up, but overall I'm quite pleased with the result! It was a great way to develop my UX skills in the context of something I really love, and I enjoyed implementing every step of the design process by myself. I have some great takeaways as well:
+					<ul>
+						<li>
+							<b>Simple design is okay</b>: My original concept was very simple in scope - help showcase and navigate London's museums. At times I felt the need to expand it into something more elaborate, but I was reminded to stick to my guns. Don't add features for features' sake!
+						</li>
+						<li>
+							<b>I need to commit eventually</b>: I can spend hours pointing out things I would change, but the project would never move forward unless I recognized the diminishing returns of constant iteration - at some point I had to say "I need to move forward now and switch gears".
+						</li>
+					</ul>
+				</p>
+				<p>-</p>
+				<p class="projectbio">
+					It's my dream to go back to London and a bigger dream to work there, but for now I'm beyond happy with the opportunity I had to live and breathe the most marvelous place I've ever experienced.
+				</p>
+				<img class="projectimage" src="assets/museumapp/bigben.png">
+				<p><i>(Protip: When traveling, make sure you're actually in some of the pictures you take)</i></p>
 			</div>
 			<a href="index.html">{Back}</a>
 		</div>

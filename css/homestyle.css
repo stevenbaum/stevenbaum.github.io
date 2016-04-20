@@ -136,13 +136,14 @@ a:hover {
 }
 
 .projectsection > h3 {
-	font-size: 1.28em;
+	font-size: 1.3em;
 }
 
 .projectsection > h3:after {
 	width: 4em;
     height: 0.2em;
-    background-color: #D691AF;
+    /* pink bar background-color: #D691AF; */
+    background-color: #6DC0CC;
     content: '';
     display: block;
     margin-left: auto;
