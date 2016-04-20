@@ -135,6 +135,10 @@ a:hover {
 	background-color: #FFFEFE;
 }
 
+.projectsection > h3 {
+	font-size: 1.28em;
+}
+
 .projectsection > h3:after {
 	width: 4em;
     height: 0.2em;
@@ -175,6 +179,16 @@ a:hover {
 	background-color: #2A97A7;
 }
 
+.green {
+	color: #4CAF50;
+	font-weight: bold;
+}
+
+.red {
+	color: #F44336;
+	font-weight: bold;
+}
+
 table {
 	margin: auto;
 }
@@ -210,7 +224,7 @@ li {
 }
 
 @media (max-width: 800px) {
-	#centerwrap {
+	.centerwrap {
 		width: 95%;
 	}
 
